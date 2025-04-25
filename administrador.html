@@ -1,0 +1,108 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="css/stilos.css">
+</head>
+<body>
+    <div class="barra">
+        <div class="brand__name"><img class="barra_logo" src="images/DDDD.png" alt="" width="237" height="35"/><img/>
+          </div><span class="amm">Amamos lo que hacemos</span></div>
+    </div>
+    <button id="cerrarSesion">Cerrar Sesión</button>
+    
+
+    <h1>Panel de Administración</h1>
+    
+    <h2>Registros de Usuarios</h2>
+    <input type="text" id="buscarUsuario" placeholder="Buscar usuario por nombre" onkeyup="buscar('usuarios', this.value)">
+    <input type="date" id="buscarFechaUsuario" placeholder="Buscar por fecha" onkeyup="buscarFecha('usuarios', this.value)">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+               <th>Teléfono</th>
+                <th>Fecha de Registro</th>
+            </tr>
+        </thead>
+        <tbody id="usuarios"></tbody>
+    </table>
+
+    <h2>Citas</h2>
+    <input type="text" id="buscarCita" placeholder="Buscar cita por nombre" onkeyup="buscar('citas', this.value)">
+    <input type="date" id="buscarFechaCita" placeholder="Buscar por fecha" onkeyup="buscarFecha('citas', this.value)">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Fecha de Cita</th>
+                <th>Fecha de Registro</th>
+            </tr>
+        </thead>
+        <tbody id="citas"></tbody>
+    </table>
+
+    <h2>Suscripciones</h2>
+    <input type="text" id="buscarSuscripcion" placeholder="Buscar suscripción por correo" onkeyup="buscar('suscripciones', this.value)">
+    <input type="date" id="buscarFechaSuscripcion" placeholder="Buscar por fecha" onkeyup="buscarFecha('suscripciones', this.value)">
+    <table>
+        <thead>
+            <tr>
+                <th>Correo Electrónico</th>
+                <th>Fecha de Registro</th>
+            </tr>
+        </thead>
+        <tbody id="suscripciones"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("datos.php")
+                .then(response => response.json())
+                .then(data => {
+                    mostrarDatos("usuarios", data.usuarios);
+                    mostrarDatos("citas", data.citas);
+                    mostrarDatos("suscripciones", data.suscripciones);
+                });
+        });
+
+        function mostrarDatos(tablaId, datos) {
+            const tbody = document.getElementById(tablaId);
+            tbody.innerHTML = "";
+            datos.forEach(item => {
+                const row = document.createElement("tr");
+                row.dataset.nombre = item.nombre || item.correo;
+                row.dataset.fecha = item.fecha_registro;
+                Object.values(item).forEach(valor => {
+                    const cell = document.createElement("td");
+                    cell.textContent = valor;
+                    row.appendChild(cell);
+                });
+                tbody.appendChild(row);
+            });
+        }
+
+        function buscar(tablaId, filtro) {
+            const filas = document.querySelectorAll(`#${tablaId} tr`);
+            filtro = filtro.toLowerCase();
+            filas.forEach(fila => {
+                const nombre = fila.dataset.nombre ? fila.dataset.nombre.toLowerCase() : "";
+                fila.style.display = nombre.includes(filtro) ? "" : "none";
+            });
+        }
+
+        function buscarFecha(tablaId, filtro) {
+            const filas = document.querySelectorAll(`#${tablaId} tr`);
+            filas.forEach(fila => {
+                const fecha = fila.dataset.fecha ? fila.dataset.fecha : "";
+                fila.style.display = fecha.includes(filtro) ? "" : "none";
+            });
+        }
+    </script>
+</body>
+</html>
