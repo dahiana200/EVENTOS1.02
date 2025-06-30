@@ -16,7 +16,7 @@ if ($_POST) {
 
     if ($conexion->query($consulta) === true) {
         echo "<script>alert('Registro exitoso.')</script>";
-        echo "<script>window.location.href = 'bienvenido_user.html';</script>";   
+        echo "<script>window.location.href = 'usuario_index.php';</script>";   
     } else {
         echo "<script>alert('Error al registrar el usuario.')</script>";
         echo "Error de SQL: " . $conexion->error;

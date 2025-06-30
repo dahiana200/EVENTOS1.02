@@ -10,7 +10,37 @@
         <div class="brand__name"><img class="barra_logo" src="images/DDDD.png" alt="" width="237" height="35"/><img/>
           </div><span class="amm">Amamos lo que hacemos</span></div>
     </div>
-    <button id="cerrarSesion">Cerrar Sesión</button>
+  <button><a href="cerrar_sesion.php">cerrar sesion</a>  </button>
+    
+<!--// Botón de Cerrar sesión -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#confirmarCerrarSesionModal">
+            Cerrar sesión
+        </button>
+
+        <!-- Modal de confirmación de Cerrar sesión -->
+        <div class="modal fade" id="confirmarCerrarSesionModal" tabindex="-1" role="dialog"
+            aria-labelledby="confirmarCerrarSesionModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmarCerrarSesionModalLabel">Confirmar cierre de sesión</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Estás seguro de que deseas cerrar sesión?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <a href="cerrar_sesion.php" class="btn btn-info">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Boton de cerrar sesion//-->
     
 
     <h1>Panel de Administración</h1>

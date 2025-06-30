@@ -5,7 +5,7 @@
 <html class="wide wow-animation" lang="es">
   <head>
     <!-- Site Title-->
-    <title>Servicios</title>
+    <title>Inicio</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,21 +63,23 @@
                 <div class="rd-navbar-nav-wrap">
                   <div class="rd-navbar-element">
                     <ul class="list-icons list-inline-sm">
-                      <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="https://www.instagram.com/"><span></span><span></span><span></span><span></span></a></li>
-                      <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="https://www.facebook.com/"><span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
                       
                     </ul>
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li><a href="index.html">Inicio<span></span><span></span><span></span><span></span></a>
+                    <li class="active"><a href="usuario_index.php">Inicio<span></span><span></span><span></span><span></span></a>
                     </li>
                     <li><a href="quienes somos.html">Quienes Somos<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li class="active"><a href="servicios.html">Servicios<span></span><span></span><span></span><span></span></a>
+                    <li><a href="servicios.html">Servicios<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
+
+                   <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
                     </li>
+-->
                   </ul>
                 </div>
               </div>
@@ -86,123 +88,82 @@
         </div>
       </header>
 
-      <section class="breadcrumbs-custom bg-image" style="background-image: url(images/1111.jpg);">
-        <div class="shell">
-          <h1 class="breadcrumbs-custom__title">Servicios</h1>
-          <ul class="breadcrumbs-custom__path">
-            <li><a href="index.html">Inicio</a></li>
-            <li class="active"><a href="servicios.html">Servicios</a></li>
-          </ul>
+      <!-- My Best Photos -->
+      <section class="section text-center">
+        <!-- Slick Carousel-->
+        <div class="slick-wrap">
+          <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="true" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/boda.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/boda.png" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Dreams</p>
+                      <p class="thumb-ann__title heading-2">Tus sueños hechos realidad.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/15" data-lightgallery="item"><img class="thumb-ann__image" src="images/15.png" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Decoración</p>
+                      <p class="thumb-ann__text">Ofrecemos como empresa uno de los mejores servicios de medellin.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/boda2.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/boda2.png" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Sueños</p>
+                      <p class="thumb-ann__text">Hazlo realidad y disfruta de la magnifica experiencia que te brindaremos.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/15.1.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/15.1.png" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Fantasía</p>
+                      <p class="thumb-ann__text">Con nosotros viviras la experiencia que tanto deseaste.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
-
-
-
-
 
       <!-- About Me-->
       <section class="section section-md bg-white">
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
             <div class="cell-sm-6 wow fadeInRightSmall">
-              <div class="thumb-line"><img src="images/decoracion.jpeg" alt="">
+              <div class="thumb-line"><video controls src="images/Dreams_2.mp4"width="551" height="430" ></video>
               </div>
             </div>
             <div class="cell-sm-6">
               <div class="box-width-3">
-                <p class="heading-1 wow fadeInLeftSmall">Nuestros servicios.</p>
+                <p class="heading-1 wow fadeInLeftSmall">Acerca de nosotros</p>
                 <article class="quote-big wow fadeInLeftSmall" data-wow-delay=".1s">
-                  <p class="q">En nuestra casa de banquetes ofrecemos todo lo que necesitas para que tu celebración sea un sueño hecho realidad. <br> 
-                    <br>
-                  Ven a conocernos y vivir la experiencia que tanto deseaste.</p>
+                  <p class="q">La mejor empresa de Medellín y su área metropolitana en organización de reuniones y eventos sociales.</p>
                 </article>
                 <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
-                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">...</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="#" data-wow-delay=".4s">Leer mas</a>
+                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">...</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="about-me.html" data-wow-delay=".4s">Leer mas</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      
-
-      <!-- aqui ponemos el foking galeria que muestra los servicios-->
-
-      <section class="section section-sm bg-gray-lighter text-center"> 
-        <div class="shell">
-          <div class="range range-50 range-sm-center">
-            <div class="cell-md-10 cell-lg-9">
-              <h1>Ofrecemos: </h1>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-        <!-- Owl Carousel-->
-        <div class="owl-carousel-wrap owl-carousel_style-2">
-          <div class="owl-carousel" data-items="1" data-lg-items="3" data-autoplay="true" data-xl-items="3" data-dots="false" data-nav="false" data-stage-padding="0" data-xs-stage-padding="90" data-sm-stage-padding="140" data-md-stage-padding="260" data-lg-stage-padding="1" data-loop="true" data-margin="0" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav" data-center-mode="true" data-speed="500" data-lightgallery="group"><a class="thumb-ruby thumb-mixed_large" href="images/tort.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/tort.png" alt="" width="649" height="427"/>
-              <div class="thumb-ruby__caption"> 
-                <p class="thumb-ruby__title heading-3">Banquetes. - Alimentacion.</p>
-                <p class="thumb-ruby__text">Contamos con nuestra propia reposteria, diseñamos y elaboramos cualquier tipo de plato deseado</p>
-              </div></a><a class="thumb-ruby thumb-mixed_large" href="images/fotografos.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/fotografos.jpeg" alt="" width="649" height="427"/>
-              <div class="thumb-ruby__caption"> 
-                <p class="thumb-ruby__title heading-3">Fotografia. - Fotografos.</p>
-                <p class="thumb-ruby__text">Tenemos fotografos profesionales para tomar el mejor angulo y lo mejor de cada una de las celebraciones. </p>
-              </div></a><a class="thumb-ruby thumb-mixed_large" href="images/caroo.jpg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/caroo.jpg" alt="" width="649" height="427"/>
-                <div class="thumb-ruby__caption"> 
-                  <p class="thumb-ruby__title heading-3">Graduaciones</p>
-                  <p class="thumb-ruby__text">Otorgamos los servicos para tener los grados de su hijo e hija tal y como usted quiera.</p>
-                </div></a><a class="thumb-ruby thumb-mixed_large" href="images/boda_c.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/boda_c.jpeg" alt="" width="649" height="427"/>
-                  <div class="thumb-ruby__caption"> 
-                    <p class="thumb-ruby__title heading-3">Boda.</p>
-                    <p class="thumb-ruby__text">Las bodas son un momento unico para muchas parejas, nosotros nos esforzamos para que sea especial.</p>
-                  </div></a><a class="thumb-ruby thumb-mixed_large" href="images/Quinces.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/Quinces.jpeg" alt="" width="649" height="427"/>
-                    <div class="thumb-ruby__caption"> 
-                      <p class="thumb-ruby__title heading-3">Quinces</p>
-                      <p class="thumb-ruby__text">Este momento es especial para la mayora de nuestros clientes, asi que tambien se vuelve especial para nosotros.</p>
-                    </div></a>
-                    <a class="thumb-ruby thumb-mixed_large" href="images/ssaalloonn.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/ssaalloonn.jpeg" alt="" width="649" height="427"/>
-                      <div class="thumb-ruby__caption"> 
-                        <p class="thumb-ruby__title heading-3">Salones</p>
-                        <p class="thumb-ruby__text">Quere mos que todos aquellos momentos especiales en las vidas de nuestros quientes sea especial, como su cumpleaños.</p>
-                      </div></a><a class="thumb-ruby thumb-mixed_large" href="images/deecora.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/deecora.jpeg" alt="" width="649" height="427"/>
-                        <div class="thumb-ruby__caption"> 
-                          <p class="thumb-ruby__title heading-3">Decoraciones.</p>
-                          <p class="thumb-ruby__text">Una de las partes mas importantes de las celebraciones es la decoracion, nosotros nos encargamos de que sea inolvidable.</p>
-                        </div></a>
-                      <a class="thumb-ruby thumb-mixed_large" href="images/collage.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/collage.jpeg" alt="" width="649" height="427"/>
-                        <div class="thumb-ruby__caption"> 
-                          <p class="thumb-ruby__title heading-3">Entre otras mas celebraciones</p>
-                          <p class="thumb-ruby__text">En Dreams no nos limitamos, dejamos un espacio creativo para nuestros clientes, para que dejen volar su imaginacion.</p>
-                        </div></a>
-                        
-                    <a class="thumb-ruby thumb-mixed_large" href="images/Bus.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/Bus.jpeg" alt="" width="649" height="427"/>
-              <div class="thumb-ruby__caption"> 
-                <p class="thumb-ruby__title heading-3">Transporte</p>
-                <p class="thumb-ruby__text">Contamos con una amplia disponibilidad de: buses, caruajes, autos casuales, limosinas... etc.</p>
-              </div></a>
-          </div>
-          <div class="owl-outer-navigation" id="owl-carousel-nav">
-            <button class="owl-arrow owl-arrow-prev">
-              <svg x="0px" y="0px" viewbox="0 0 28.5 16" width="26" height="14">
-                <line x1="27.5" y1="8" x2="1" y2="8" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></line>
-                <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="8.8,15 1,8 8.8,1"></polyline>
-              </svg>
-            </button>
-            <button class="owl-arrow owl-arrow-next">
-              <svg x="0px" y="0px" viewbox="0 0 28.5 16" width="26" height="14">
-                <line fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1" y1="8" x2="27.5" y2="8"></line>
-                <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="19.7,15 27.5,8 19.7,1"></polyline>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
+      <!-- Awards-->
 
 
 
-
-      <!-- Portfolio
+      <!-- mini galeria   -->
       <section class="section section-md bg-white text-center">
         <div class="shell-fluid">
           <p class="heading-1">Galería</p>
@@ -247,58 +208,10 @@
             </div>
           </div>
         </div>
-
-      
-      <section class="section parallax-container bg-image-dark" data-parallax-img="images/boda1.jpg">
-        <div class="parallax-content">
-          <section class="section-lg text-center">
-            <div class="shell">
-              <div class="range range-50 range-sm-center range-md-reverse range-md-middle">
-                <div class="cell-md-6 cell-lg-5">
-                  <div class="box-width-4 box-centered">
-                    <p class="heading-1">Disfruta Con Nosotros, <br> Recerva </p>
-                    <div class="divider-small"></div>
-                    <p>Danos todos los detalles posible para hacer tu sueño realidad.</p>
-                  </div>
-                </div>
-                <div class="cell-sm-10 cell-md-6 cell-lg-7">
-                  <article class="box-bordered">
-                    <div class="box-bordered__main">
-                   
-                      <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                        <div class="form-wrap">
-                          <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="date" data-constraints="@Required">
-                          <label class="form-label" for="contact-date"> Fecha del evento</label>
-                        </div>
-                        <div class="form-wrap">
-                          <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                          <label class="form-label" for="contact-name"> Tu Nombre</label>
-                        </div>
-                        <div class="form-wrap">
-                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                          <label class="form-label" for="contact-email">  Gmail.com</label>
-                        </div>
-                        <div class="form-wrap">
-                          <label class="form-label" for="contact-message">  Danos un pequeña descripcion de lo que quieres.</label>
-                          <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                        </div>
-                        <div class="form-wrap form-button offset-1">
-                          <button class="button button-block button-primary-outline button-ujarak" type="submit">Agende una cita</button>
-                        </div>
-                      </form>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
       </section>
 
-    -->
-      <!-- <a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )" target="_blank"><img src="images/banner/foreground-03-1600x310.png" srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt="" width="1600" height="310"></a>
-      -->
- <section class="section section-md bg-white">
+      <!-- REGISTRO DE USURIOS-->
+      <section class="section section-md bg-white">
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-reverse range-md-middle">
             <div class="cell-sm-10 cell-md-6 wow fadeInRight">
@@ -310,8 +223,39 @@
             <div class="cell-sm-10 cell-md-6 wow fadeInLeft">
               <article class="box-line"><span></span><span></span><span></span><span></span>
                 <div class="box-line__main">
-                  
-                     
+                  <!-- RD Mailform-->
+                  <!--<form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-name">Nombre completo</label>
+                    </div>
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-name">Celular</label>
+                    </div>
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-name" type="email" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-name">Correo electrónico</label>
+                    </div>
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="date" data-constraints="@Required">
+                      <label class="form-label" for="contact-date">Fecha de evento</label>
+                    </div>
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-name">Horario de evento</label>
+                    </div>
+                    <div  class="form-wrap ave">
+                      <form action="/action_page.php">
+                        <label for="cars">Tipo de evento:</label>
+                        <select name="cars" id="cars">
+                          <option value="boda">Bodas</option>
+                          <option value="XV">XV</option>
+                          <option value="primera comunion">Primera comunion</option>
+                          <option value="cumpleaños">Cumpleaños</option>
+                          <option value="empresariales">empresariales</option>
+                        </select>                      
+                      </form>-->
                     </div>
 
                     <div class="form-wrap">
@@ -329,14 +273,15 @@
         </div>
       </section>
 
-      
+      <!-- <a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )" target="_blank"><img src="images/banner/foreground-03-1600x310.png" srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt="" width="1600" height="310"></a>
+      -->
       <footer class="footer-centered section bg-gray-darker">
         <div class="shell">
           <div class="range range-sm-center">
             <div class="cell-sm-10 cell-md-8 cell-lg-6">
               <!-- Brand--><a class="brand" href="index.html">
-                <div class="brand__name"><img class="brand__logo-dark" src="images/invertido.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/invertido.png" alt="" width="237" height="35"/>
-                </div><span class="brand__slogan">Amamos lo que Hacemos</span></a>
+                <div class="brand__name"><img src="images/invertido.png" width="237" height="35"/>
+                </div><span class="brand__slogan">Amamos lo Que Hacemos</span></a>
                     <!-- RD Mailform-->
                     <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                       <div class="form__inner">
@@ -350,11 +295,12 @@
                       </div>
                     </form>
               <ul class="list-icons list-inline-sm">
-                <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="https://www.instagram.com"><span></span><span></span><span></span><span></span></a></li>
+                <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="https://www.instagram.com"><span></span><span></span><span></span><span></span></a></li> <br>
                 <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="https://www.facebook.com"><span></span><span></span><span></span><span></span></a></li>
-               </ul>
+                
+              </ul>
               <!-- Rights-->
-              <p class="rights"><span>Dreams</span><span>&nbsp;&copy;&nbsp; </span><span class="copyright-year"></span>.&nbsp; <br class="veil-xs"><a class="link-underline" href="#">Privacy Policy</a><span> Design&nbsp;by&nbsp;<a href="#">Dahiana.D</a></span></p>
+              <p class="rights"><span>  Dreams   </span><span>&nbsp;&copy;&nbsp; </span><span class="copyright-year"></span>.&nbsp; <br class="veil-xs"><a class="link-underline" href="#">Privacy Policy</a><span> Design&nbsp;by&nbsp;<a href="#">dahiana</a></span></p>
             </div>
           </div>
         </div>
@@ -365,5 +311,6 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- coded by Himic-->
   </body>
-</html>
+</html>w
