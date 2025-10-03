@@ -28,7 +28,7 @@ if($_POST){
             $conexion->close();
         }
         if($perfil=="2"){
-            header("Location: usuario_index.php");
+            header("Location: index.php");
             $conexion->close();
         }        
       }else{
@@ -44,3 +44,4 @@ if($_POST){
  }//cierra POST
 
 ?>
+

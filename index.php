@@ -65,19 +65,26 @@
                     <ul class="list-icons list-inline-sm">
                       <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
                       <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
-                      
+<!--HABILITAMOS UN BOTON PARA CERRAR SESION-->
+<button class="cerrarSesion"><a href="index.html"> Cerrar Sesión</a> </button>
+
+      
+
+                      <!--Hasta aqui llega el codigo del boton-->
                     </ul>
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="index.html">Inicio<span></span><span></span><span></span><span></span></a>
+                    <li class="active"><a href="index.php">Inicio<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="quienes somos.html">Quienes Somos<span></span><span></span><span></span><span></span></a>
+                    <li><a href="quienes somos.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="servicios.html">Servicios<span></span><span></span><span></span><span></span></a>
+                    <li ><a href="servicios.php">Servicios<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
+
+                   <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
                     </li>
+-->
                   </ul>
                 </div>
               </div>
@@ -285,7 +292,7 @@
                       <div class="form__inner">
                         <div class="form-wrap">
                           <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
-                          <label class="form-label" for="subscribe-form-footer-email">Email</label>
+                          <label class="form-label" for="subscribe-form-footer-email">Your E-mail...</label>
                         </div>
                         <div class="form-button">
                           <button class="button button-link" type="submit">Subscribe</button>

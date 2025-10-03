@@ -61,18 +61,26 @@
                     <ul class="list-icons list-inline-sm">
                       <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
                       <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
-                       </ul>
+<!--HABILITAMOS UN BOTON PARA CERRAR SESION-->
+<button class="cerrarSesion"><a href="index.html"> Cerrar Sesión</a> </button>
+
+      
+
+                      <!--Hasta aqui llega el codigo del boton-->
+                    </ul>
                   </div>
                   <!-- RD Navbar Nav-->
-                  <ul class="rd-navbar-nav">
-                    <li><a href="index.html">Inicio<span></span><span></span><span></span><span></span></a>
+                   <ul class="rd-navbar-nav">
+                    <li><a href="index.php">Inicio<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li class="active"><a href="quienes somos.html">Quienes Somos<span></span><span></span><span></span><span></span></a>
+                    <li class="active"><a href="quienes somos.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="servicios.html">Servicios<span></span><span></span><span></span><span></span></a>
+                    <li><a href="servicios.php">Servicios<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
+
+                   <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
                     </li>
+-->
                   </ul>
                 </div>
               </div>
@@ -182,74 +190,7 @@
         </div>
       </section>
 
-      <!--Primero registrar usuarios-->
-
-      </section>
-      <section class="section section-md bg-white">
-        <div class="shell">
-          <div class="range range-50 range-sm-center range-md-left range-md-reverse range-md-middle">
-            <div class="cell-sm-10 cell-md-6 wow fadeInRight">
-              <div class="box-width-4 box-centered">
-                <p class="heading-1">Disfruta con nosotros, <br> reserva.</p>
-                <p>Danos todos los detalles posible para hacer tu sueño realidad.</p>
-              </div>
-            </div>
-            <div class="cell-sm-10 cell-md-6 wow fadeInLeft">
-              <article class="box-line"><span></span><span></span><span></span><span></span>
-                <div class="box-line__main">
-                  <!-- RD Mailform-->
-                  <!--<form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-name">Nombre completo</label>
-                    </div>
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-name">Celular</label>
-                    </div>
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-name" type="email" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-name">Correo electrónico</label>
-                    </div>
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="date" data-constraints="@Required">
-                      <label class="form-label" for="contact-date">Fecha de evento</label>
-                    </div>
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-name">Horario de evento</label>
-                    </div>
-                    <div  class="form-wrap ave">
-                      <form action="/action_page.php">
-                        <label for="cars">Tipo de evento:</label>
-                        <select name="cars" id="cars">
-                          <option value="boda">Bodas</option>
-                          <option value="XV">XV</option>
-                          <option value="primera comunion">Primera comunion</option>
-                          <option value="cumpleaños">Cumpleaños</option>
-                          <option value="empresariales">empresariales</option>
-                        </select>                      
-                      </form>-->
-                    </div>
-                    
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-message">REGISTRATE CON NOSOTROS & HAS TU RESERVA</label>
-                    <br>
-                    </div>
-                    <div class="form-wrap form-button offset-1">
-                      <button class="button button-block button-primary-outline button-ujarak" ><a href="index1.html">Regístrate</a></button>
-                    </div>
-                  </form>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--Antiguo registro de eventos
-
-           <!-- <section class="section parallax-container bg-image-dark" data-parallax-img="images/boda1.jpg">
+            <section class="section parallax-container bg-image-dark" data-parallax-img="images/boda1.jpg">
               <div class="parallax-content">
                 <section class="section-lg text-center">
                   <div class="shell">
@@ -261,16 +202,10 @@
                           <p>Danos todos los detalles posible para hacer tu sueño realidad.</p>
                         </div>
                       </div>
-
-
                       <div class="cell-sm-10 cell-md-6 cell-lg-7">
                         <article class="box-bordered">
                           <div class="box-bordered__main">
-
-
-                            //RD Mailform
-
-
+                            <!-- RD Mailform-->
                             <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                               <div class="form-wrap">
                                 <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="date" data-constraints="@Required">
@@ -300,7 +235,7 @@
                 </section>
               </div>
             </section>
--->
+
 
       
       <footer class="footer-centered section bg-gray-darker">
@@ -315,7 +250,7 @@
                       <div class="form__inner">
                         <div class="form-wrap">
                           <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
-                          <label class="form-label" for="subscribe-form-footer-email">E-mail...</label>
+                          <label class="form-label" for="subscribe-form-footer-email">Your E-mail...</label>
                         </div>
                         <div class="form-button">
                           <button class="button button-link" type="submit">Subscribe</button>
