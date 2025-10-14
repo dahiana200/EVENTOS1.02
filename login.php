@@ -23,12 +23,12 @@ if($_POST){
         session_start();
         $_SESSION['logueado']= $id;
         //verificamos el perfil a donde va ingresar
-        if($perfil=="1"){        
-            header("Location: administrador.html");          
+        if($perfil=="admi"){        
+            header("Location: administrador.php");          
             $conexion->close();
         }
-        if($perfil=="2"){
-            header("Location: index.php");
+        if($perfil=="user"){
+            header("Location: index_usser.php");
             $conexion->close();
         }        
       }else{

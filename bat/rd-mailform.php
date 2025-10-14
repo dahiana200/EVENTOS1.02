@@ -5,6 +5,7 @@ $formConfig = json_decode($formConfigFile, true);
 
 date_default_timezone_set('Etc/UTC');
 
+
 try {
     require './phpmailer/PHPMailerAutoload.php';
 

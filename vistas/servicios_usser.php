@@ -1,0 +1,348 @@
+<!--Esta Pagina solo fue hecha_modificada por Dahiana Andrea Duarte Valle, 
+  el codigo y el diseño fue de mi parte(dahiana duarte)
+-->
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="es">
+  <head>
+    <!-- Site Title-->
+    <title>Servicios</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <!-- Stylesheets-->
+    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CJosefin+Sans:400,700,300italic">-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <!-- Page Loader-->
+    <div id="page-loader">
+      <div class="page-loader-body">
+        <div class="cssload-spinner">
+          <div class="cssload-cube cssload-cube0"></div>
+          <div class="cssload-cube cssload-cube1"></div>
+          <div class="cssload-cube cssload-cube2"></div>
+          <div class="cssload-cube cssload-cube3"></div>
+          <div class="cssload-cube cssload-cube4"></div>
+          <div class="cssload-cube cssload-cube5"></div>
+          <div class="cssload-cube cssload-cube6"> </div>
+          <div class="cssload-cube cssload-cube7"></div>
+          <div class="cssload-cube cssload-cube8"></div>
+          <div class="cssload-cube cssload-cube9"></div>
+          <div class="cssload-cube cssload-cube10"></div>
+          <div class="cssload-cube cssload-cube11"></div>
+          <div class="cssload-cube cssload-cube12"></div>
+          <div class="cssload-cube cssload-cube13"></div>
+          <div class="cssload-cube cssload-cube14"></div>
+          <div class="cssload-cube cssload-cube15"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+      <!-- <a class="section section-banner text-center veil reveal-lg-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )" target="_blank"><img src="images/banner/foreground-04-1600x60.png" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>-->
+      <!-- Page header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="5px" data-lg-stick-up-offset="5px" data-md-stick-up="true" data-lg-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html">
+                    <div class="brand__name"><img class="brand__logo-dark" src="images/DDDD.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/DDDD.png" alt="" width="237" height="35"/>
+                      </div><span class="brand__slogan">Amamos lo que hacemos</span></a></div>
+                </div>
+                <!-- RD Navbar Nav-->
+                <!-- RD Navbar Nav-->
+                <div class="rd-navbar-nav-wrap">
+                  <div class="rd-navbar-element">
+                    <ul class="list-icons list-inline-sm">
+                      <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
+
+                      <li><a class="icon icon-sm fa  icon-style-camera" href="index.html">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
+
+      
+
+                      <!--Hasta aqui llega el codigo del boton-->
+                    </ul>
+                  </div>
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li ><a href="index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
+                    </li>
+                    <li><a href="quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
+                    </li>
+                    <li class="active" ><a href="servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
+                    </li>
+
+                   <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
+                    </li>
+-->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="breadcrumbs-custom bg-image" style="background-image: url(images/1111.jpg);">
+        <div class="shell">
+          <h1 class="breadcrumbs-custom__title">Servicios</h1>
+          <ul class="breadcrumbs-custom__path">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="servicios.html">Servicios</a></li>
+          </ul>
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- About Me-->
+      <section class="section section-md bg-white">
+        <div class="shell">
+          <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
+            <div class="cell-sm-6 wow fadeInRightSmall">
+              <div class="thumb-line"><img src="images/decoracion.jpeg" alt="">
+              </div>
+            </div>
+            <div class="cell-sm-6">
+              <div class="box-width-3">
+                <p class="heading-1 wow fadeInLeftSmall">Nuestros servicios.</p>
+                <article class="quote-big wow fadeInLeftSmall" data-wow-delay=".1s">
+                  <p class="q">En nuestra casa de banquetes ofrecemos todo lo que necesitas para que tu celebración sea un sueño hecho realidad. <br> 
+                    <br>
+                  Ven a conocernos y vivir la experiencia que tanto deseaste.</p>
+                </article>
+                <div class="divider wow fadeInLeftSmall" data-wow-delay=".2s"></div>
+                <p class="wow fadeInLeftSmall" data-wow-delay=".3s">...</p><a class="button button-primary-outline button-ujarak button-size-1 wow fadeInLeftSmall" href="#" data-wow-delay=".4s">Leer mas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- aqui ponemos el foking galeria que muestra los servicios-->
+
+      <section class="section section-sm bg-gray-lighter text-center"> 
+        <div class="shell">
+          <div class="range range-50 range-sm-center">
+            <div class="cell-md-10 cell-lg-9">
+              <h1>Ofrecemos: </h1>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+        <!-- Owl Carousel-->
+        <div class="owl-carousel-wrap owl-carousel_style-2">
+          <div class="owl-carousel" data-items="1" data-lg-items="3" data-autoplay="true" data-xl-items="3" data-dots="false" data-nav="false" data-stage-padding="0" data-xs-stage-padding="90" data-sm-stage-padding="140" data-md-stage-padding="260" data-lg-stage-padding="1" data-loop="true" data-margin="0" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav" data-center-mode="true" data-speed="500" data-lightgallery="group"><a class="thumb-ruby thumb-mixed_large" href="images/tort.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/tort.png" alt="" width="649" height="427"/>
+              <div class="thumb-ruby__caption"> 
+                <p class="thumb-ruby__title heading-3">Banquetes. - Alimentacion.</p>
+                <p class="thumb-ruby__text">Contamos con nuestra propia reposteria, diseñamos y elaboramos cualquier tipo de plato deseado</p>
+              </div></a><a class="thumb-ruby thumb-mixed_large" href="images/fotografos.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/fotografos.jpeg" alt="" width="649" height="427"/>
+              <div class="thumb-ruby__caption"> 
+                <p class="thumb-ruby__title heading-3">Fotografia. - Fotografos.</p>
+                <p class="thumb-ruby__text">Tenemos fotografos profesionales para tomar el mejor angulo y lo mejor de cada una de las celebraciones. </p>
+              </div></a><a class="thumb-ruby thumb-mixed_large" href="images/caroo.jpg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/caroo.jpg" alt="" width="649" height="427"/>
+                <div class="thumb-ruby__caption"> 
+                  <p class="thumb-ruby__title heading-3">Graduaciones</p>
+                  <p class="thumb-ruby__text">Otorgamos los servicos para tener los grados de su hijo e hija tal y como usted quiera.</p>
+                </div></a><a class="thumb-ruby thumb-mixed_large" href="images/boda_c.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/boda_c.jpeg" alt="" width="649" height="427"/>
+                  <div class="thumb-ruby__caption"> 
+                    <p class="thumb-ruby__title heading-3">Boda.</p>
+                    <p class="thumb-ruby__text">Las bodas son un momento unico para muchas parejas, nosotros nos esforzamos para que sea especial.</p>
+                  </div></a><a class="thumb-ruby thumb-mixed_large" href="images/Quinces.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/Quinces.jpeg" alt="" width="649" height="427"/>
+                    <div class="thumb-ruby__caption"> 
+                      <p class="thumb-ruby__title heading-3">Quinces</p>
+                      <p class="thumb-ruby__text">Este momento es especial para la mayora de nuestros clientes, asi que tambien se vuelve especial para nosotros.</p>
+                    </div></a>
+                    <a class="thumb-ruby thumb-mixed_large" href="images/ssaalloonn.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/ssaalloonn.jpeg" alt="" width="649" height="427"/>
+                      <div class="thumb-ruby__caption"> 
+                        <p class="thumb-ruby__title heading-3">Salones</p>
+                        <p class="thumb-ruby__text">Quere mos que todos aquellos momentos especiales en las vidas de nuestros quientes sea especial, como su cumpleaños.</p>
+                      </div></a><a class="thumb-ruby thumb-mixed_large" href="images/deecora.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/deecora.jpeg" alt="" width="649" height="427"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">Decoraciones.</p>
+                          <p class="thumb-ruby__text">Una de las partes mas importantes de las celebraciones es la decoracion, nosotros nos encargamos de que sea inolvidable.</p>
+                        </div></a>
+                      <a class="thumb-ruby thumb-mixed_large" href="images/collage.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/collage.jpeg" alt="" width="649" height="427"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">Entre otras mas celebraciones</p>
+                          <p class="thumb-ruby__text">En Dreams no nos limitamos, dejamos un espacio creativo para nuestros clientes, para que dejen volar su imaginacion.</p>
+                        </div></a>
+                        
+                    <a class="thumb-ruby thumb-mixed_large" href="images/Bus.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/Bus.jpeg" alt="" width="649" height="427"/>
+              <div class="thumb-ruby__caption"> 
+                <p class="thumb-ruby__title heading-3">Transporte</p>
+                <p class="thumb-ruby__text">Contamos con una amplia disponibilidad de: buses, caruajes, autos casuales, limosinas... etc.</p>
+              </div></a>
+          </div>
+          <div class="owl-outer-navigation" id="owl-carousel-nav">
+            <button class="owl-arrow owl-arrow-prev">
+              <svg x="0px" y="0px" viewbox="0 0 28.5 16" width="26" height="14">
+                <line x1="27.5" y1="8" x2="1" y2="8" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></line>
+                <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="8.8,15 1,8 8.8,1"></polyline>
+              </svg>
+            </button>
+            <button class="owl-arrow owl-arrow-next">
+              <svg x="0px" y="0px" viewbox="0 0 28.5 16" width="26" height="14">
+                <line fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1" y1="8" x2="27.5" y2="8"></line>
+                <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="19.7,15 27.5,8 19.7,1"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- Portfolio
+      <section class="section section-md bg-white text-center">
+        <div class="shell-fluid">
+          <p class="heading-1">Galería</p>
+          <div class="isotope thumb-ruby-wrap wow fadeIn" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/sa.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/sa.png" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">Salones </p>
+                          <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="images/parj.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/parj.png" alt="" width="444" height="683"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">Boda </p>
+                          <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/xv.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/xv.png" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">XV </p>
+                          <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="images/par.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/par.png" alt="" width="444" height="683"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">Boda </p>
+                          <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/cum.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/cum.png" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">Cumpleaños </p>
+                          <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/comunion.jpg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/comunion.jpg" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption"> 
+                          <p class="thumb-ruby__title heading-3">Comuniones </p>
+                          <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
+                        </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      <section class="section parallax-container bg-image-dark" data-parallax-img="images/boda1.jpg">
+        <div class="parallax-content">
+          <section class="section-lg text-center">
+            <div class="shell">
+              <div class="range range-50 range-sm-center range-md-reverse range-md-middle">
+                <div class="cell-md-6 cell-lg-5">
+                  <div class="box-width-4 box-centered">
+                    <p class="heading-1">Disfruta Con Nosotros, <br> Recerva </p>
+                    <div class="divider-small"></div>
+                    <p>Danos todos los detalles posible para hacer tu sueño realidad.</p>
+                  </div>
+                </div>
+                <div class="cell-sm-10 cell-md-6 cell-lg-7">
+                  <article class="box-bordered">
+                    <div class="box-bordered__main">
+                   
+                      <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="date" data-constraints="@Required">
+                          <label class="form-label" for="contact-date"> Fecha del evento</label>
+                        </div>
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                          <label class="form-label" for="contact-name"> Tu Nombre</label>
+                        </div>
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                          <label class="form-label" for="contact-email">  Gmail.com</label>
+                        </div>
+                        <div class="form-wrap">
+                          <label class="form-label" for="contact-message">  Danos un pequeña descripcion de lo que quieres.</label>
+                          <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                        </div>
+                        <div class="form-wrap form-button offset-1">
+                          <button class="button button-block button-primary-outline button-ujarak" type="submit">Agende una cita</button>
+                        </div>
+                      </form>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+    -->
+      <!-- <a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )" target="_blank"><img src="images/banner/foreground-03-1600x310.png" srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt="" width="1600" height="310"></a>
+      -->
+
+
+      
+      <footer class="footer-centered section bg-gray-darker">
+        <div class="shell">
+          <div class="range range-sm-center">
+            <div class="cell-sm-10 cell-md-8 cell-lg-6">
+              <!-- Brand--><a class="brand" href="index.html">
+                <div class="brand__name"><img class="brand__logo-dark" src="images/invertido.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/invertido.png" alt="" width="237" height="35"/>
+                </div><span class="brand__slogan">Amamos lo que Hacemos</span></a>
+                    <!-- RD Mailform-->
+                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                      <div class="form__inner">
+                        <div class="form-wrap">
+                          <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
+                          <label class="form-label" for="subscribe-form-footer-email">Your E-mail...</label>
+                        </div>
+                        <div class="form-button">
+                          <button class="button button-link" type="submit">Subscribe</button>
+                        </div>
+                      </div>
+                    </form>
+              <ul class="list-icons list-inline-sm">
+                <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="https://www.instagram.com"><span></span><span></span><span></span><span></span></a></li>
+                <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="https://www.facebook.com"><span></span><span></span><span></span><span></span></a></li>
+               </ul>
+              <!-- Rights-->
+              <p class="rights"><span>Dreams</span><span>&nbsp;&copy;&nbsp; </span><span class="copyright-year"></span>.&nbsp; <br class="veil-xs"><a class="link-underline" href="#">Privacy Policy</a><span> Design&nbsp;by&nbsp;<a href="#">Dahiana.D</a></span></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
