@@ -1,5 +1,5 @@
 <?php
-include("../../conexion.php"); // conexión
+include("../c/conexion.php"); // conexión
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -118,7 +118,7 @@ if (isset($_POST['guardar'])) {
             VALUES ('$id_usuario','$nombre','$telefono','$fecha_cita')";
 
     if ($conexion->query($sql)) {
-        header("Location: ../../administrador.php"); // Redirige al panel
+        header("Location: ../vistas/administrador.php"); // Redirige al panel
         exit();
     } else {
         echo "Error: " . $conexion->error;

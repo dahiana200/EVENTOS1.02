@@ -1,5 +1,5 @@
 <?php
-include("../conexion.php");
+include("../c/conexion.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -159,7 +159,7 @@ include("../conexion.php");
         <div class="brand__name">
             <img class="barra_logo" src="/EVENTOS/images/DDDD.png" alt="Logo"/>
         </div>
-        <button class="logout-btn" onclick="window.location.href='/EVENTOS/cerrar_sesion.php'">
+        <button class="logout-btn" onclick="window.location.href='/EVENTOS/c/cerrar_sesion.php'">
             <i class="fas fa-sign-out-alt"></i> Cerrar sesión
         </button>
     </div>
@@ -222,7 +222,7 @@ include("../conexion.php");
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            fetch("/EVENTOS/datos.php")
+            fetch("/EVENTOS/c/datos.php")
                 .then(res => res.json())
                 .then(data => {
                     mostrarDatos("usuarios-body", data.usuarios, "usuarios");

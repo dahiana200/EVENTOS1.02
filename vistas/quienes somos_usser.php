@@ -9,12 +9,12 @@
     <meta charset="utf-8">
     <!-- Stylesheets-->
     
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="../images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <!-- Page Loader-->
     <div id="page-loader">
       <div class="page-loader-body">
@@ -51,8 +51,8 @@
                 <div class="rd-navbar-panel">
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html">
-                    <div class="brand__name"><img class="brand__logo-dark" src="images/DDDD.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/DDDD.png" alt="" width="37" height="35"/>
+                  <div class="rd-navbar-brand"><a class="brand" href="../vistas/index_usser.php">
+                    <div class="brand__name"><img class="brand__logo-dark" src="../images/DDDD.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="../images/DDDD.png" alt="" width="37" height="35"/>
                       </div><span class="brand__slogan">Amamos Lo Que Hacemos</span></a></div>
                 </div>
                 <!-- RD Navbar Nav-->
@@ -62,7 +62,7 @@
                       <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
                       <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
 
-                      <li><a class="icon icon-sm fa  icon-style-camera" href="index.html">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa  icon-style-camera" href="../vistas/index.html">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
 
       
 
@@ -71,11 +71,11 @@
                   </div>
                   <!-- RD Navbar Nav-->
                    <ul class="rd-navbar-nav">
-                    <li><a href="index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
+                    <li class="active"><a href="../vistas/index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li class="active"><a href="quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
+                    <li><a href="../vistas/quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
+                    <li ><a href="../vistas/servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
                     </li>
 
                    <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
@@ -90,7 +90,7 @@
       </header>
 
       <!-- Breadcrumbs-->
-       <section class="breadcrumbs-custom bg-image" style="background-image: url(images/1111.jpg);">
+       <section class="breadcrumbs-custom bg-image" style="background-image: url(../images/1111.jpg);">
         <div class="shell">
           <h1 class="breadcrumbs-custom__title">Quienes Somos</h1>
           <ul class="breadcrumbs-custom__path">
@@ -105,7 +105,7 @@
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left">
             <div class="cell-sm-6 cell-md-5">
-              <div class="thumb-line"><video controls src="images/Dreams_2.mp4"width="551" height="430" ></video>
+              <div class="thumb-line"><video controls src="../images/Dreams_2.mp4"width="551" height="430" ></video>
                 
               </div>
             </div>
@@ -117,11 +117,11 @@
                 <div class="divider"></div>
                 <p class="text-spacing-05">cumpliendo sueños nos ha llevado hacer lo que somos, líder en el medio. Ofrecemos una amplia gama de servicios para bodas, quinceaños, bautizos, grados, cumpleaños, eventos empresariales entre otros, contamos con cuatro salones estrategicamente ubicados en el área metropolitana de Medellin.</p>
                 <div class="group-3-columns" data-lightgallery="group">
-                  <div class="column-item"><a class="thumb-light" href="images/zzz.png" data-lightgallery="item"><img src="images/zzz.png" alt="" width="120" height="171"/>
+                  <div class="column-item"><a class="thumb-light" href="../images/zzz.png" data-lightgallery="item"><img src="../images/zzz.png" alt="" width="120" height="171"/>
                       <div class="thumb-light__overlay"></div></a></div>
-                  <div class="column-item"><a class="thumb-light" href="images/pej.png" data-lightgallery="item"><img src="images/pej.png" alt="" width="120" height="171"/>
+                  <div class="column-item"><a class="thumb-light" href="../images/pej.png" data-lightgallery="item"><img src="../images/pej.png" alt="" width="120" height="171"/>
                       <div class="thumb-light__overlay"></div></a></div>
-                  <div class="column-item"><a class="thumb-light" href="images/pendj.png" data-lightgallery="item"><img src="images/pendj.png" alt="" width="120" height="171"/>
+                  <div class="column-item"><a class="thumb-light" href="../images/pendj.png" data-lightgallery="item"><img src="../images/pendj.png" alt="" width="120" height="171"/>
                       <div class="thumb-light__overlay"></div></a></div>
                 </div>
               </div>
@@ -150,7 +150,7 @@
                       <ul class="quote-boxed__meta">
                         <li>
                           <div class="unit unit-horizontal unit-middle">
-                            <div class="unit__left"><img class="quote-boxed__avatar" src="images/tort.png" alt="" width="46" height="46"/>
+                            <div class="unit__left"><img class="quote-boxed__avatar" src="../images/tort.png" alt="" width="46" height="46"/>
                             </div>
                           
                           </div>
@@ -195,7 +195,7 @@
 
 
       
-            <section class="section parallax-container bg-image-dark" data-parallax-img="images/boda1.jpg">
+            <section class="section parallax-container bg-image-dark" data-parallax-img="../images/boda1.jpg">
               <div class="parallax-content">
                 <section class="section-lg text-center">
                   <div class="shell">
@@ -211,7 +211,7 @@
                         <article class="box-bordered">
                           <div class="box-bordered__main">
                             <!-- RD Mailform-->
-                            <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                            <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="../bat/rd-mailform.php">
                               <div class="form-wrap">
                                 <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="date" data-constraints="@Required">
                                 <label class="form-label" for="contact-date">Fecha del evento</label>
@@ -248,10 +248,10 @@
           <div class="range range-sm-center">
             <div class="cell-sm-10 cell-md-8 cell-lg-6">
               <!-- Brand--><a class="brand" href="index.html">
-                <div class="brand__name"><img class="brand__logo-dark" src="images/invertido.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/invertido.png" alt="" width="237" height="35"/>
+                <div class="brand__name"><img class="brand__logo-dark" src="../images/invertido.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="../images/invertido.png" alt="" width="237" height="35"/>
                 </div><span class="brand__slogan">Amamos lo que Hacemos</span></a>
                     <!-- RD Mailform-->
-                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="../bat/rd-mailform.php">
                       <div class="form__inner">
                         <div class="form-wrap">
                           <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
@@ -276,7 +276,7 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/core.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

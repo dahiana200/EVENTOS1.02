@@ -12,12 +12,12 @@
     <meta charset="utf-8">
     <!-- Stylesheets-->
     <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CJosefin+Sans:400,700,300italic">-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/st.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/st.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="../images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <!-- Page Loader-->
     <div id="page-loader">
       <div class="page-loader-body">
@@ -56,7 +56,7 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
                   <div class="rd-navbar-brand"><a class="brand" href="index.html">
-                    <div class="brand__name"><img class="brand__logo-dark" src="images/DDDD.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/DDDD.png" alt="" width="237" height="35"/>
+                    <div class="brand__name"><img class="brand__logo-dark" src="../images/DDDD.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="../images/DDDD.png" alt="" width="237" height="35"/>
                       </div><span class="brand__slogan">Amamos lo que hacemos</span></a></div>
                 </div>
                 <!-- RD Navbar Nav-->
@@ -65,7 +65,7 @@
                     <ul class="list-icons list-inline-sm">
                       <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
                       <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
-                      <li><a class="icon icon-sm fa  icon-style-camera" href="index.html">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa  icon-style-camera" href="../vistas/index_usser.php">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
 
       
 
@@ -74,11 +74,11 @@
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="../index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
+                    <li class="active"><a href="../vistas/index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="../quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
+                    <li><a href="../vistas/quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li ><a href="../servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
+                    <li ><a href="../vistas/servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
                     </li>
 
                    <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
@@ -99,7 +99,7 @@
           <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="true" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">
             <div class="item">
               <div class="slick-slide-inner">
-                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/boda.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/boda.png" alt="" width="961" height="664"/>
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="../images/boda.png" data-lightgallery="item"><img class="thumb-ann__image" src="../images/boda.png" alt="" width="961" height="664"/>
                     <div class="thumb-ann__caption"> 
                       <p class="thumb-ann__title heading-3">Dreams</p>
                       <p class="thumb-ann__title heading-2">Tus sueños hechos realidad.</p>
@@ -109,7 +109,7 @@
             </div>
             <div class="item">
               <div class="slick-slide-inner">
-                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/15" data-lightgallery="item"><img class="thumb-ann__image" src="images/15.png" alt="" width="961" height="664"/>
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="../images/15.png" data-lightgallery="item"><img class="thumb-ann__image" src="../images/15.png" alt="" width="961" height="664"/>
                     <div class="thumb-ann__caption"> 
                       <p class="thumb-ann__title heading-3">Decoración</p>
                       <p class="thumb-ann__text">Ofrecemos como empresa uno de los mejores servicios de medellin.</p>
@@ -119,7 +119,7 @@
             </div>
             <div class="item">
               <div class="slick-slide-inner">
-                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/boda2.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/boda2.png" alt="" width="961" height="664"/>
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="../images/boda2.png" data-lightgallery="item"><img class="thumb-ann__image" src="../images/boda2.png" alt="" width="961" height="664"/>
                     <div class="thumb-ann__caption"> 
                       <p class="thumb-ann__title heading-3">Sueños</p>
                       <p class="thumb-ann__text">Hazlo realidad y disfruta de la magnifica experiencia que te brindaremos.</p>
@@ -129,7 +129,7 @@
             </div>
             <div class="item">
               <div class="slick-slide-inner">
-                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="images/15.1.png" data-lightgallery="item"><img class="thumb-ann__image" src="images/15.1.png" alt="" width="961" height="664"/>
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="../images/15.1.png" data-lightgallery="item"><img class="thumb-ann__image" src="../images/15.1.png" alt="" width="961" height="664"/>
                     <div class="thumb-ann__caption"> 
                       <p class="thumb-ann__title heading-3">Fantasía</p>
                       <p class="thumb-ann__text">Con nosotros viviras la experiencia que tanto deseaste.</p>
@@ -146,7 +146,7 @@
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
             <div class="cell-sm-6 wow fadeInRightSmall">
-              <div class="thumb-line"><video controls src="images/Dreams_2.mp4"width="551" height="430" ></video>
+              <div class="thumb-line"><video controls src="../images/Dreams_2.mp4"width="551" height="430" ></video>
               </div>
             </div>
             <div class="cell-sm-6">
@@ -173,37 +173,37 @@
           <p class="heading-1">Galería</p>
           <div class="isotope thumb-ruby-wrap wow fadeIn" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
             <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/sa.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/sa.png" alt="" width="440" height="327"/>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="../images/sa.png" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/sa.png" alt="" width="440" height="327"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">Salones </p>
                           <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
                         </div></a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="images/parj.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/parj.png" alt="" width="444" height="683"/>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="../images/parj.png" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/parj.png" alt="" width="444" height="683"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">Boda </p>
                           <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
                         </div></a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/xv.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/xv.png" alt="" width="440" height="327"/>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="../images/xv.png" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/xv.png" alt="" width="440" height="327"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">XV </p>
                           <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
                         </div></a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="images/par.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/par.png" alt="" width="444" height="683"/>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="../images/par.png" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/par.png" alt="" width="444" height="683"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">Boda </p>
                           <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
                         </div></a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/cum.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/cum.png" alt="" width="440" height="327"/>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="../images/cum.png" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/cum.png" alt="" width="440" height="327"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">Cumpleaños </p>
                           <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
                         </div></a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/comunion.jpg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/comunion.jpg" alt="" width="440" height="327"/>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="../images/comunion.jpg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/comunion.jpg" alt="" width="440" height="327"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">Comuniones </p>
                           <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
@@ -228,7 +228,7 @@
               <article class="box-line"><span></span><span></span><span></span><span></span>
                 <div class="box-line__main">
                   <!-- RD Mailform-->
-                  <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                  <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="../bat/rd-mailform.php">
                     <div class="form-wrap">
                       <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
                       <label class="form-label" for="contact-name">Nombre completo</label>
@@ -290,10 +290,10 @@
           <div class="range range-sm-center">
             <div class="cell-sm-10 cell-md-8 cell-lg-6">
               <!-- Brand--><a class="brand" href="index.html">
-                <div class="brand__name"><img src="images/invertido.png" width="237" height="35"/>
+                <div class="brand__name"><img src="../images/invertido.png" width="237" height="35"/>
                 </div><span class="brand__slogan">Amamos lo Que Hacemos</span></a>
                     <!-- RD Mailform-->
-                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="../bat/rd-mailform.php">
                       <div class="form__inner">
                         <div class="form-wrap">
                           <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
@@ -319,8 +319,8 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/core.min.js"></script>
+    <script src="../js/script.js"></script>
     <!-- coded by Himic-->
   </body>
-</html>w
+</html>

@@ -1,5 +1,5 @@
 <?php
-include("../../conexion.php");
+include("../c/conexion.php");
 
 // Obtener ID desde la URL
 $id = intval($_GET['id'] ?? 0);
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($upd->execute()) {
         $upd->close();
-        header("Location: /EVENTOS/administrador.php");
+        header("Location: /EVENTOS/vistas/administrador.php");
         exit;
     } else {
         echo "Error: " . $conexion->error;

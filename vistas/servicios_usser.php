@@ -12,12 +12,12 @@
     <meta charset="utf-8">
     <!-- Stylesheets-->
     <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CJosefin+Sans:400,700,300italic">-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="../images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <!-- Page Loader-->
     <div id="page-loader">
       <div class="page-loader-body">
@@ -56,7 +56,7 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
                   <div class="rd-navbar-brand"><a class="brand" href="index.html">
-                    <div class="brand__name"><img class="brand__logo-dark" src="images/DDDD.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/DDDD.png" alt="" width="237" height="35"/>
+                    <div class="brand__name"><img class="brand__logo-dark" src="../images/DDDD.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="../images/DDDD.png" alt="" width="237" height="35"/>
                       </div><span class="brand__slogan">Amamos lo que hacemos</span></a></div>
                 </div>
                 <!-- RD Navbar Nav-->
@@ -67,7 +67,7 @@
                       <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
                       <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
 
-                      <li><a class="icon icon-sm fa  icon-style-camera" href="index.html">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa  icon-style-camera" href="../vistas/index_usser.php">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
 
       
 
@@ -76,11 +76,11 @@
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li ><a href="index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
+                    <li class="active"><a href="../vistas/index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li><a href="quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
+                    <li><a href="../vistas/quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li class="active" ><a href="servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
+                    <li ><a href="../vistas/servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
                     </li>
 
                    <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
@@ -94,12 +94,12 @@
         </div>
       </header>
 
-      <section class="breadcrumbs-custom bg-image" style="background-image: url(images/1111.jpg);">
+      <section class="breadcrumbs-custom bg-image" style="background-image: url(../images/1111.jpg);">
         <div class="shell">
           <h1 class="breadcrumbs-custom__title">Servicios</h1>
           <ul class="breadcrumbs-custom__path">
-            <li><a href="index.html">Inicio</a></li>
-            <li class="active"><a href="servicios.html">Servicios</a></li>
+            <li><a href="../vistas/index_usser.php">Inicio</a></li>
+            <li class="active"><a href="../vistas/servicios_usser.php">Servicios</a></li>
           </ul>
         </div>
       </section>
@@ -114,7 +114,7 @@
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-middle range-md-reverse">
             <div class="cell-sm-6 wow fadeInRightSmall">
-              <div class="thumb-line"><img src="images/decoracion.jpeg" alt="">
+              <div class="thumb-line"><img src="../images/decoracion.jpeg" alt="">
               </div>
             </div>
             <div class="cell-sm-6">
@@ -148,43 +148,43 @@
         </div>
         <!-- Owl Carousel-->
         <div class="owl-carousel-wrap owl-carousel_style-2">
-          <div class="owl-carousel" data-items="1" data-lg-items="3" data-autoplay="true" data-xl-items="3" data-dots="false" data-nav="false" data-stage-padding="0" data-xs-stage-padding="90" data-sm-stage-padding="140" data-md-stage-padding="260" data-lg-stage-padding="1" data-loop="true" data-margin="0" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav" data-center-mode="true" data-speed="500" data-lightgallery="group"><a class="thumb-ruby thumb-mixed_large" href="images/tort.png" data-lightgallery="item"><img class="thumb-ruby__image" src="images/tort.png" alt="" width="649" height="427"/>
+          <div class="owl-carousel" data-items="1" data-lg-items="3" data-autoplay="true" data-xl-items="3" data-dots="false" data-nav="false" data-stage-padding="0" data-xs-stage-padding="90" data-sm-stage-padding="140" data-md-stage-padding="260" data-lg-stage-padding="1" data-loop="true" data-margin="0" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav" data-center-mode="true" data-speed="500" data-lightgallery="group"><a class="thumb-ruby thumb-mixed_large" href="../images/tort.png" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/tort.png" alt="" width="649" height="427"/>
               <div class="thumb-ruby__caption"> 
                 <p class="thumb-ruby__title heading-3">Banquetes. - Alimentacion.</p>
                 <p class="thumb-ruby__text">Contamos con nuestra propia reposteria, diseñamos y elaboramos cualquier tipo de plato deseado</p>
-              </div></a><a class="thumb-ruby thumb-mixed_large" href="images/fotografos.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/fotografos.jpeg" alt="" width="649" height="427"/>
+              </div></a><a class="thumb-ruby thumb-mixed_large" href="../images/fotografos.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/fotografos.jpeg" alt="" width="649" height="427"/>
               <div class="thumb-ruby__caption"> 
                 <p class="thumb-ruby__title heading-3">Fotografia. - Fotografos.</p>
                 <p class="thumb-ruby__text">Tenemos fotografos profesionales para tomar el mejor angulo y lo mejor de cada una de las celebraciones. </p>
-              </div></a><a class="thumb-ruby thumb-mixed_large" href="images/caroo.jpg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/caroo.jpg" alt="" width="649" height="427"/>
+              </div></a><a class="thumb-ruby thumb-mixed_large" href="../images/caroo.jpg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/caroo.jpg" alt="" width="649" height="427"/>
                 <div class="thumb-ruby__caption"> 
                   <p class="thumb-ruby__title heading-3">Graduaciones</p>
                   <p class="thumb-ruby__text">Otorgamos los servicos para tener los grados de su hijo e hija tal y como usted quiera.</p>
-                </div></a><a class="thumb-ruby thumb-mixed_large" href="images/boda_c.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/boda_c.jpeg" alt="" width="649" height="427"/>
+                </div></a><a class="thumb-ruby thumb-mixed_large" href="../images/boda_c.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/boda_c.jpeg" alt="" width="649" height="427"/>
                   <div class="thumb-ruby__caption"> 
                     <p class="thumb-ruby__title heading-3">Boda.</p>
                     <p class="thumb-ruby__text">Las bodas son un momento unico para muchas parejas, nosotros nos esforzamos para que sea especial.</p>
-                  </div></a><a class="thumb-ruby thumb-mixed_large" href="images/Quinces.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/Quinces.jpeg" alt="" width="649" height="427"/>
+                  </div></a><a class="thumb-ruby thumb-mixed_large" href="../images/Quinces.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/Quinces.jpeg" alt="" width="649" height="427"/>
                     <div class="thumb-ruby__caption"> 
                       <p class="thumb-ruby__title heading-3">Quinces</p>
                       <p class="thumb-ruby__text">Este momento es especial para la mayora de nuestros clientes, asi que tambien se vuelve especial para nosotros.</p>
                     </div></a>
-                    <a class="thumb-ruby thumb-mixed_large" href="images/ssaalloonn.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/ssaalloonn.jpeg" alt="" width="649" height="427"/>
+                    <a class="thumb-ruby thumb-mixed_large" href="../images/ssaalloonn.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/ssaalloonn.jpeg" alt="" width="649" height="427"/>
                       <div class="thumb-ruby__caption"> 
                         <p class="thumb-ruby__title heading-3">Salones</p>
                         <p class="thumb-ruby__text">Quere mos que todos aquellos momentos especiales en las vidas de nuestros quientes sea especial, como su cumpleaños.</p>
-                      </div></a><a class="thumb-ruby thumb-mixed_large" href="images/deecora.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/deecora.jpeg" alt="" width="649" height="427"/>
+                      </div></a><a class="thumb-ruby thumb-mixed_large" href="../images/deecora.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/deecora.jpeg" alt="" width="649" height="427"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">Decoraciones.</p>
                           <p class="thumb-ruby__text">Una de las partes mas importantes de las celebraciones es la decoracion, nosotros nos encargamos de que sea inolvidable.</p>
                         </div></a>
-                      <a class="thumb-ruby thumb-mixed_large" href="images/collage.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/collage.jpeg" alt="" width="649" height="427"/>
+                      <a class="thumb-ruby thumb-mixed_large" href="../images/collage.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/collage.jpeg" alt="" width="649" height="427"/>
                         <div class="thumb-ruby__caption"> 
                           <p class="thumb-ruby__title heading-3">Entre otras mas celebraciones</p>
                           <p class="thumb-ruby__text">En Dreams no nos limitamos, dejamos un espacio creativo para nuestros clientes, para que dejen volar su imaginacion.</p>
                         </div></a>
-                        
-                    <a class="thumb-ruby thumb-mixed_large" href="images/Bus.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="images/Bus.jpeg" alt="" width="649" height="427"/>
+
+                    <a class="thumb-ruby thumb-mixed_large" href="../images/Bus.jpeg" data-lightgallery="item"><img class="thumb-ruby__image" src="../images/Bus.jpeg" alt="" width="649" height="427"/>
               <div class="thumb-ruby__caption"> 
                 <p class="thumb-ruby__title heading-3">Transporte</p>
                 <p class="thumb-ruby__text">Contamos con una amplia disponibilidad de: buses, caruajes, autos casuales, limosinas... etc.</p>
@@ -314,10 +314,10 @@
           <div class="range range-sm-center">
             <div class="cell-sm-10 cell-md-8 cell-lg-6">
               <!-- Brand--><a class="brand" href="index.html">
-                <div class="brand__name"><img class="brand__logo-dark" src="images/invertido.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="images/invertido.png" alt="" width="237" height="35"/>
+                <div class="brand__name"><img class="brand__logo-dark" src="../images/invertido.png" alt="" width="237" height="35"/><img class="brand__logo-light" src="../images/invertido.png" alt="" width="237" height="35"/>
                 </div><span class="brand__slogan">Amamos lo que Hacemos</span></a>
                     <!-- RD Mailform-->
-                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                    <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="../bat/rd-mailform.php">
                       <div class="form__inner">
                         <div class="form-wrap">
                           <input class="form-input" id="subscribe-form-footer-email" type="email" name="email" data-constraints="@Email @Required">
@@ -342,7 +342,7 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/core.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
