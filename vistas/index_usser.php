@@ -65,7 +65,7 @@
                     <ul class="list-icons list-inline-sm">
                       <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
                       <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="#"><span></span><span></span><span></span><span></span></a></li>
-                      <li><a class="icon icon-sm fa  icon-style-camera" href="../vistas/index_usser.php">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
+                      <li><a class="icon icon-sm fa  icon-style-camera" href="../vistas/index.html">Cerrar sesión<span></span><span></span><span></span><span></span></a></li>
 
       
 

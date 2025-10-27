@@ -1,5 +1,5 @@
 <?php
-include("../../conexion.php");
+include("../../c/conexion.php");
 
 $id = intval($_GET['id'] ?? 0);
 if ($id <= 0) die("ID inválido.");
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $upd->close();
         echo "<script>
                 alert('Suscripción actualizada correctamente');
-                window.location.href = '../../administrador.php';
+                window.location.href = '../../vistas/administrador.php';
               </script>";
         exit;
     } else {

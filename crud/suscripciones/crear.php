@@ -1,5 +1,5 @@
 <?php
-include("../../conexion.php"); // conexión
+include("../../c/conexion.php"); // conexión
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -105,7 +105,7 @@ if (isset($_POST['guardar'])) {
             VALUES ('$id_usuario', '$correo', '$tipo', '$fecha_inicio', " . ($fecha_fin ? "'$fecha_fin'" : "NULL") . ", '$estado')";
 
     if ($conexion->query($sql)) {
-        header("Location: ../../administrador.php"); 
+        header("Location: ../../vistas/administrador.php"); 
         exit();
     } else {
         echo "Error: " . $conexion->error;

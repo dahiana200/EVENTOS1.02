@@ -1,5 +1,5 @@
 <?php
-include("../../conexion.php");
+include("../c/conexion.php");
 
 $id = $_GET['id'] ?? null;
 
