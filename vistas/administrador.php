@@ -11,6 +11,8 @@ include("../c/conexion.php");
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+    
+
         :root {
             --color-primario: #78b2edff;
             --color-secundario: #004080;
@@ -28,18 +30,31 @@ include("../c/conexion.php");
 
         /* Barra superior */
         .barra {
-            display: flex;
+            display: relative;
+           position: absolute;
+            top: -13%;           /* Centra verticalmente */
+            left: 18%;         /* Centra horizontalmente */
+            border-radius: 8px;
             align-items: center;
             justify-content: space-between;
             background: var(--color-primario);
-            padding: 12px 25px;
+            padding: 15px 305px;
+            border-bottom: 4px solid var(rgba(95, 157, 250, 0.09););
             color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 5px rgba(31, 45, 56, 0.2);
         }
-        .barra_logo { height: 45px; }
+             .barra_logo {
+             height: 55px;
+            top: 63px;
+            left: -130%;
+            position: relative;
+        }
         .logout-btn {
             background: var(--color-acento);
             border: none;
+            position: relative;
+            left: 130%;
+            top: 12px;
             color: white;
             padding: 8px 16px;
             border-radius: 6px;
