@@ -81,7 +81,7 @@
 					}
 				}
 			}
-
+			
 			// Enable custom pagination
 			if ( c.attr( 'data-dots-custom' ) ) {
 				c.on( "initialized.owl.carousel", function ( event ) {

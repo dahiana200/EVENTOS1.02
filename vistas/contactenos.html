@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -203,9 +204,69 @@
           </div>
         </div>
       </section>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.5834721087382!2d-75.61489035201062!3d6.219627206482916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses!2sco!4v1731615607164!5m2!1ses!2sco" width="1350" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.5834721087382!2d-75.61489035201062!3d6.219627206482916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses!2sco!4v1731615607164!5m2!1ses!2sco" width="1350" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+
+    <div id="map"> </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap" ></script>
     
-    
+      <script>
+        function iniciarMap(){
+          var coord = {lat:6.219627, lng:-75.612793};
+          var map = new google.maps.Map(document.getElementById('map'),{
+            zoom: 10,
+            center: coord
+          });
+          var marker = new google.maps.Marker({
+            position: coord,
+            map: map
+          });
+        }
+          </script>
+        -->
+
+
+
+      <!-- MAPAAAAAAAAAAAS-->
+
+<!-- Mapa -->
+<div id="map" style="height: 500px; width: 100%;"></div>
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  // Crear el mapa
+  var map = L.map('map').setView([4.5709, -74.2973], 16);
+
+  // Cargar mapa de OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  // ----------------------------
+  // ICONO PERSONALIZADO
+  // ----------------------------
+  var customIcon = L.icon({
+      iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png", // Cambia esta URL si quieres otro icono
+      iconSize: [25, 25],        // Tamaño del icono
+      iconAnchor: [20, 40],      // Punto del icono que "toca" el mapa
+      popupAnchor: [0, -40]      // Popup encima del icono
+  });
+
+  // Marcador Medellín con icono personalizado
+  var marker = L.marker([6.219627, -75.612793], { icon: customIcon }).addTo(map);
+  marker.bindPopup("Dreams").openPopup();
+</script>
+
+
+
+
+
+
+
       <footer class="footer-centered section bg-gray-darker">
         <div class="shell">
           <div class="range range-sm-center">

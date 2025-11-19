@@ -191,7 +191,10 @@ body {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
-
+#map{
+	height: 500px;
+	width: 100%;
+}
 a {
 	color: #46a2d9d6;
 	text-decoration: none;
