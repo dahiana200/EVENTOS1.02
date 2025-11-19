@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <!-- Stylesheets-->
-    
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -264,20 +264,20 @@ var marker = L.marker([6.219627, -75.612793], { icon: customIcon }).addTo(map);
 // Popup con HTML (texto + botón)
 marker.bindPopup(`
     <div style="text-align:center;">
-        <h3>Dreams</h3>
+        <h2 style="
+            font-family: 'Great Vibes';">Dream</h2>
         <button 
             onclick="window.location.href='../vistas/index1.html'" 
             style="
+            font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
                 padding:8px 12px;
-                background:#4f46e5;
+                background:#3465e7;
                 color:white;
                 border:none;
                 border-radius:6px;
                 cursor:pointer;
                 margin-top:5px;
             ">
-            Visitanos.
-            <br>
             Registrate
         </button>
     </div>
