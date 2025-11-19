@@ -258,8 +258,31 @@ var customIcon = L.icon({
 
 
   // Marcador Medellín con icono personalizado
-  var marker = L.marker([6.219627, -75.612793], { icon: customIcon }).addTo(map);
-  marker.bindPopup("Dreams").openPopup();
+  // Marcador Medellín con icono personalizado
+var marker = L.marker([6.219627, -75.612793], { icon: customIcon }).addTo(map);
+
+// Popup con HTML (texto + botón)
+marker.bindPopup(`
+    <div style="text-align:center;">
+        <h3>Dreams</h3>
+        <button 
+            onclick="window.location.href='../vistas/index1.html'" 
+            style="
+                padding:8px 12px;
+                background:#4f46e5;
+                color:white;
+                border:none;
+                border-radius:6px;
+                cursor:pointer;
+                margin-top:5px;
+            ">
+            Visitanos.
+            <br>
+            Registrate
+        </button>
+    </div>
+`).openPopup();
+
 </script>
 
 
