@@ -238,7 +238,7 @@
 
 <script>
   // Crear el mapa
-  var map = L.map('map').setView([4.5709, -74.2973], 16);
+  var map = L.map('map').setView([6.219627, -75.612793], 17);
 
   // Cargar mapa de OpenStreetMap
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -249,12 +249,13 @@
   // ----------------------------
   // ICONO PERSONALIZADO
   // ----------------------------
-  var customIcon = L.icon({
-      iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png", // Cambia esta URL si quieres otro icono
-      iconSize: [25, 25],        // Tamaño del icono
-      iconAnchor: [20, 40],      // Punto del icono que "toca" el mapa
-      popupAnchor: [0, -40]      // Popup encima del icono
-  });
+var customIcon = L.icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/2776/2776067.png",
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+
 
   // Marcador Medellín con icono personalizado
   var marker = L.marker([6.219627, -75.612793], { icon: customIcon }).addTo(map);
