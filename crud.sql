@@ -1,310 +1,111 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 02-10-2025 a las 22:11:40
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
-
+--  BASE DE DATOS NORMALIZADA
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+--  TABLA USUARIOS
+CREATE TABLE IF NOT EXISTS usuarios (
+  id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(60) NOT NULL,
+  clave VARCHAR(255) NOT NULL,
+  nombre VARCHAR(50) NOT NULL,
+  apellidos VARCHAR(50) NOT NULL,
+  perfil VARCHAR(10) NOT NULL,
+  estado VARCHAR(10) DEFAULT NULL
+) ENGINE=InnoDB;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+--  TABLA CLIENTE
+CREATE TABLE IF NOT EXISTS cliente (
+  id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+  nombre_cliente VARCHAR(50),
+  apellido_cliente VARCHAR(50),
+  telefono_cliente VARCHAR(20),
+  email_cliente VARCHAR(100),
+  direccion_cliente VARCHAR(200)
+) ENGINE=InnoDB;
 
---
--- Base de datos: `crud`
---
+--  TABLA TIPO DE EVENTO
+CREATE TABLE IF NOT EXISTS tipoevento (
+  id_tipoevento INT AUTO_INCREMENT PRIMARY KEY,
+  descripcion_tipoevento VARCHAR(200)
+) ENGINE=InnoDB;
 
--- --------------------------------------------------------
+--  TABLA METODO DE PAGO
+CREATE TABLE IF NOT EXISTS metododepago (
+  id_metodo INT AUTO_INCREMENT PRIMARY KEY,
+  descripcion_metodo VARCHAR(200),
+  tipo_metodo ENUM('Tarjeta de crédito','Tarjeta de débito','Transferencia bancaria')
+) ENGINE=InnoDB;
 
---
--- Estructura de tabla para la tabla `citas`
---
+--  TABLA ESTADO DE RESERVA
+CREATE TABLE IF NOT EXISTS estadoreserva (
+  id_estadoserva INT AUTO_INCREMENT PRIMARY KEY,
+  descripcion VARCHAR(200)
+) ENGINE=InnoDB;
 
-CREATE TABLE `citas` (
-  `id_cita` int(11) NOT NULL,
-  `nombre` varchar(60) NOT NULL,
-  `telefono` varchar(20) NOT NULL,
-  `fecha_cita` date NOT NULL,
-  `fecha_registro` timestamp NOT NULL DEFAULT current_timestamp(),
-  `id_usuario` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+--  TABLA EVENTOS NORMALIZADA
+CREATE TABLE IF NOT EXISTS eventos (
+  id_evento INT AUTO_INCREMENT PRIMARY KEY,
+  nombre_evento VARCHAR(100),
+  descripcion_evento TEXT,
+  fecha_evento DATE,
+  hora_evento TIME,
+  lugar_evento VARCHAR(200),
 
---
--- Volcado de datos para la tabla `citas`
---
+  -- NUEVAS RELACIONES
+  id_cliente INT,
+  id_tipoevento INT,
+  id_metodo_pago INT,
+  id_estado INT,
 
-INSERT INTO `citas` (`id_cita`, `nombre`, `telefono`, `fecha_cita`, `fecha_registro`, `id_usuario`) VALUES
-(11, 'Santiago ', '3135301221', '2025-10-20', '2025-10-02 19:21:51', 20),
-(12, 'catalina', '0082758624', '2025-10-31', '2025-10-02 20:08:20', 4);
+  FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+  FOREIGN KEY (id_tipoevento) REFERENCES tipoevento(id_tipoevento),
+  FOREIGN KEY (id_metodo_pago) REFERENCES metododepago(id_metodo),
+  FOREIGN KEY (id_estado) REFERENCES estadoreserva(id_estadoserva)
+) ENGINE=InnoDB;
 
--- --------------------------------------------------------
+--  TABLA SERVICIOS NORMALIZADA
+DROP TABLE IF EXISTS servicios_eventos;
 
---
--- Estructura de tabla para la tabla `cliente`
---
+CREATE TABLE servicios (
+  id_servicio INT AUTO_INCREMENT PRIMARY KEY,
+  nombre_servicio VARCHAR(100) NOT NULL,
+  precio DECIMAL(10,2) NOT NULL
+) ENGINE=InnoDB;
 
-CREATE TABLE `cliente` (
-  `id_cliente` int(11) NOT NULL,
-  `nombre_cliente` varchar(50) DEFAULT NULL,
-  `apellido_cliente` varchar(50) DEFAULT NULL,
-  `telefono_cliente` varchar(20) DEFAULT NULL,
-  `email_cliente` varchar(100) DEFAULT NULL,
-  `direccion_cliente` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+--  TABLA PUENTE MUCHOS A MUCHOS: EVENTOS - SERVICIOS
+CREATE TABLE eventos_servicios (
+  id_evento INT NOT NULL,
+  id_servicio INT NOT NULL,
 
--- --------------------------------------------------------
+  PRIMARY KEY (id_evento, id_servicio),
 
---
--- Estructura de tabla para la tabla `estadoreserva`
---
+  FOREIGN KEY (id_evento) REFERENCES eventos(id_evento) ON DELETE CASCADE,
+  FOREIGN KEY (id_servicio) REFERENCES servicios(id_servicio) ON DELETE CASCADE
+) ENGINE=InnoDB;
 
-CREATE TABLE `estadoreserva` (
-  `id_estadoserva` int(11) NOT NULL,
-  `descripcion` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+--  TABLA CITAS (RELACIONADA CON USUARIOS)
+CREATE TABLE IF NOT EXISTS citas (
+  id_cita INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(60) NOT NULL,
+  telefono VARCHAR(20) NOT NULL,
+  fecha_cita DATE NOT NULL,
+  fecha_registro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  id_usuario INT NOT NULL,
+  FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB;
 
--- --------------------------------------------------------
+--  TABLA SUSCRIPCIONES (RELACIONADA CON USUARIOS)
+CREATE TABLE IF NOT EXISTS suscripciones (
+  id_suscripcion INT AUTO_INCREMENT PRIMARY KEY,
+  id_usuario INT NOT NULL,
+  correo VARCHAR(100) NOT NULL,
+  tipo ENUM('un mes','un trimestre','un semestre','un año') NOT NULL,
+  fecha_inicio DATE NOT NULL,
+  fecha_fin DATE DEFAULT NULL,
+  estado ENUM('activo','inactivo') DEFAULT 'activo',
+  fecha_registro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB;
 
---
--- Estructura de tabla para la tabla `eventos`
---
-
-CREATE TABLE `eventos` (
-  `id_evento` int(11) NOT NULL,
-  `nombre_evento` varchar(100) DEFAULT NULL,
-  `descripcion_evento` text DEFAULT NULL,
-  `fecha_evento` date DEFAULT NULL,
-  `hora_evento` time DEFAULT NULL,
-  `lugar_evento` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `metododepago`
---
-
-CREATE TABLE `metododepago` (
-  `id_metodo` int(11) NOT NULL,
-  `descripcion_metodo` varchar(200) DEFAULT NULL,
-  `tipo_metodo` enum('Tarjeta de crédito','Tarjeta de débito','Transferencia bancaria') DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `servicios_eventos`
---
-
-CREATE TABLE `servicios_eventos` (
-  `id_servicio` int(11) NOT NULL,
-  `descripcion_servicio` varchar(200) DEFAULT NULL,
-  `precio_servicio` decimal(10,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `suscripciones`
---
-
-CREATE TABLE `suscripciones` (
-  `id_suscripcion` int(11) NOT NULL,
-  `id_usuario` int(11) NOT NULL,
-  `correo` varchar(100) NOT NULL,
-  `tipo` enum('un mes','un trimestre','un semestre','un año') NOT NULL,
-  `fecha_inicio` date NOT NULL,
-  `fecha_fin` date DEFAULT NULL,
-  `estado` enum('activo','inactivo') DEFAULT 'activo',
-  `fecha_registro` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `suscripciones`
---
-
-INSERT INTO `suscripciones` (`id_suscripcion`, `id_usuario`, `correo`, `tipo`, `fecha_inicio`, `fecha_fin`, `estado`, `fecha_registro`) VALUES
-(5, 20, 'samueldiazmarin@gmail.com', 'un trimestre', '2025-10-01', '2025-12-30', 'activo', '2025-10-02 15:11:31'),
-(9, 4, 'caro@gmail.com', 'un mes', '2025-10-01', '2025-10-31', 'activo', '2025-10-02 20:09:04');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tipoevento`
---
-
-CREATE TABLE `tipoevento` (
-  `id_tipoevento` int(11) NOT NULL,
-  `descripcion_tipoevento` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `usuarios`
---
-
-CREATE TABLE `usuarios` (
-  `id_usuario` int(11) NOT NULL,
-  `usuario` varchar(60) NOT NULL,
-  `clave` varchar(255) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apellidos` varchar(50) NOT NULL,
-  `perfil` varchar(10) NOT NULL,
-  `estado` varchar(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `usuarios`
---
-
-INSERT INTO `usuarios` (`id_usuario`, `usuario`, `clave`, `nombre`, `apellidos`, `perfil`, `estado`) VALUES
-(4, 'caro@gmail.com', '4321', 'carolina', 'Arias ', 'user', 'activo'),
-(18, 'dahi@gmail.com', '1234554321', 'jhoser', 'arias', 'admi', 'inactivo'),
-(20, 'samueldiazmarin@gmail.com', '123456789', 'samuel', 'Arias', 'user', 'inactivo');
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `citas`
---
-ALTER TABLE `citas`
-  ADD PRIMARY KEY (`id_cita`),
-  ADD KEY `fk_citas_usuario` (`id_usuario`);
-
---
--- Indices de la tabla `cliente`
---
-ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`id_cliente`);
-
---
--- Indices de la tabla `estadoreserva`
---
-ALTER TABLE `estadoreserva`
-  ADD PRIMARY KEY (`id_estadoserva`);
-
---
--- Indices de la tabla `eventos`
---
-ALTER TABLE `eventos`
-  ADD PRIMARY KEY (`id_evento`);
-
---
--- Indices de la tabla `metododepago`
---
-ALTER TABLE `metododepago`
-  ADD PRIMARY KEY (`id_metodo`);
-
---
--- Indices de la tabla `servicios_eventos`
---
-ALTER TABLE `servicios_eventos`
-  ADD PRIMARY KEY (`id_servicio`);
-
---
--- Indices de la tabla `suscripciones`
---
-ALTER TABLE `suscripciones`
-  ADD PRIMARY KEY (`id_suscripcion`),
-  ADD KEY `fk_suscripciones_usuario` (`id_usuario`);
-
---
--- Indices de la tabla `tipoevento`
---
-ALTER TABLE `tipoevento`
-  ADD PRIMARY KEY (`id_tipoevento`);
-
---
--- Indices de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id_usuario`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `citas`
---
-ALTER TABLE `citas`
-  MODIFY `id_cita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT de la tabla `cliente`
---
-ALTER TABLE `cliente`
-  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `estadoreserva`
---
-ALTER TABLE `estadoreserva`
-  MODIFY `id_estadoserva` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `eventos`
---
-ALTER TABLE `eventos`
-  MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `metododepago`
---
-ALTER TABLE `metododepago`
-  MODIFY `id_metodo` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `servicios_eventos`
---
-ALTER TABLE `servicios_eventos`
-  MODIFY `id_servicio` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `suscripciones`
---
-ALTER TABLE `suscripciones`
-  MODIFY `id_suscripcion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT de la tabla `tipoevento`
---
-ALTER TABLE `tipoevento`
-  MODIFY `id_tipoevento` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `citas`
---
-ALTER TABLE `citas`
-  ADD CONSTRAINT `fk_citas_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `suscripciones`
---
-ALTER TABLE `suscripciones`
-  ADD CONSTRAINT `fk_suscripciones_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
