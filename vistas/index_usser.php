@@ -214,7 +214,7 @@
         </div>
       </section>
 
-      <!-- REGISTRO DE USURIOS-->
+      <!-- REGISTRO de citas-->
       <section class="section section-md bg-white">
         <div class="shell">
           <div class="range range-50 range-sm-center range-md-left range-md-reverse range-md-middle">
@@ -242,9 +242,9 @@
                       <label class="form-label" for="contact-name">Correo electrónico</label>
                     </div>
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="date" data-constraints="@Required">
-                      <label class="form-label" for="contact-date">Fecha de evento</label>
-                    </div>
+                         <input class="form-input" id="contact-date" type="date" data-time-picker="date" name="date" data-constraints="@Required">
+                        <label class="form-label" for="contact-date">fecha que planeas realizar tu cita</label>
+                      </div>
                     <div class="form-wrap">
                       <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
                       <label class="form-label" for="contact-name">Horario de evento</label>
@@ -293,6 +293,7 @@
                 <div class="brand__name"><img src="../images/invertido.png" width="237" height="35"/>
                 </div><span class="brand__slogan">Amamos lo Que Hacemos</span></a>
                     <!-- RD Mailform-->
+                     <!-- Formulario de suscripcion-->
                     <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="../bat/rd-mailform.php">
                       <div class="form__inner">
                         <div class="form-wrap">
@@ -304,6 +305,7 @@
                         </div>
                       </div>
                     </form>
+                    <!-- Hasta aqui el formulario-->
               <ul class="list-icons list-inline-sm">
                 <li><a class="icon icon-sm fa fa-instagram icon-style-camera" href="https://www.instagram.com"><span></span><span></span><span></span><span></span></a></li> <br>
                 <li><a class="icon icon-sm fa fa-facebook icon-style-camera" href="https://www.facebook.com"><span></span><span></span><span></span><span></span></a></li>

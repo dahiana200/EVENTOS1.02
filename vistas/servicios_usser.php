@@ -76,11 +76,11 @@
                   </div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="../vistas/index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
+                    <li><a href="../vistas/index_usser.php">Inicio<span></span><span></span><span></span><span></span></a>
                     </li>
                     <li><a href="../vistas/quienes somos_usser.php">Quienes Somos<span></span><span></span><span></span><span></span></a>
                     </li>
-                    <li ><a href="../vistas/servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
+                    <li class="active"><a href="../vistas/servicios_usser.php">Servicios<span></span><span></span><span></span><span></span></a>
                     </li>
 
                    <!-- <li><a href="contactenos.html">Contactenos<span></span><span></span><span></span><span></span></a>
